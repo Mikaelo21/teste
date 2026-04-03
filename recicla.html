@@ -1,0 +1,56 @@
+<!DOCTYPE html><!--Trabalho de: Mikael Alano, Rayana e Gabriel-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" /> <!--torna o site responsivo para diferentes dispositivos-->
+
+<title>Projeto Refloresta - 🌱ReflorestaVida</title> <!--título que aparece na aba do navegador-->
+<style>
+</style> <!--espaço para colocar estilos CSS internos-->
+<link rel="icon" href="data:image/png;base64,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" type="image/png"> <!--ícone da aba em base64-->
+<link rel="stylesheet" href="style.recicla.css"> <!--arquivo CSS externo-->
+</head>
+<body>
+<hr class="barrinha"> <!--linha separadora-->
+<h1> Projeto reciclagem - ♻️Recicla Comunidade</h1> <!--título principal-->
+<button id="botao" class="botao1; animacao"><a href="index.html" style="text-decoration: none; color: white;">Voltar para o Início</a></button> <!--botão com link para a página inicial-->
+<hr id="linha"> <!--linha horizontal-->
+<div class="linha3"> <!--container principal do conteúdo-->
+    <div class="video"> <!--div para o vídeo-->
+        <iframe class="animacao" width="560" height="315" src="https://www.youtube.com/embed/ITur0JNJZos?si=eZwBGVHDH_agfh6V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--vídeo do YouTube embutido-->
+    </div>
+    <section id="introducao"> <!--sessão de introdução-->
+        <h2>Introdução</h2> <!--subtítulo-->
+        <p>A fauna é um dos componentes mais importantes do nosso ecossistema. A preservação das espécies animais é essencial para manter o equilíbrio da natureza e garantir a biodiversidade.</p> <!--texto explicativo-->
+    </section>
+    <section id="importancia"> <!--sessão sobre importância da fauna-->
+        <h2>Importância da Fauna</h2> <!--subtítulo-->
+        <ul> <!--lista com benefícios-->
+            <li>Contribui para a polinização de plantas e produção de alimentos.</li>
+            <li>Ajuda na regulação de populações de outras espécies.</li>
+            <li>Fornece recursos como medicamentos e materiais.</li>
+            <li>Enriquece a cultura e o turismo sustentável.</li>
+        </ul>
+    </section>
+    <section id="projetos"> <!--sessão sobre projetos-->
+        <h2>Projetos em Ação</h2> <!--subtítulo-->
+        <p>Na ONG Vida Selvagem, promovemos a conservação da fauna através de projetos de educação ambiental, reabilitação de animais e parcerias com comunidades locais para proteger habitats naturais.</p> <!--descrição dos projetos-->
+    </section>
+    <section> <!--sessão com dicas para conservação-->
+        <h2 id="conservacao">Dicas para Preservar a Fauna</h2> <!--subtítulo-->
+        <ul id="conservacao"> <!--lista não ordenada-->
+            <li>Evite o uso de produtos que prejudicam o meio ambiente.</li> <!--item da lista-->
+            <li>Participe de campanhas de preservação e conscientização.</li>   <!--item da lista-->
+            <li>Respeite os habitats naturais e as espécies locais.</li>   <!--item da lista-->
+            <li>Denuncie práticas ilegais de caça e tráfico de animais.</li> <!--item da lista-->
+            <li>Eduque sua família e amigos sobre a importância da fauna.</li> <!--item da lista-->
+        </ul>
+        <audio class="animacao1" controls> <!--player de áudio-->
+            <source src="audios/Reciclagem (música) [jzEXz105MJw].mp3" type=""> <!--arquivo de áudio da música-->
+            Seu navegador não suporta o elemento de áudio. <!--mensagem caso o navegador não suporte áudio-->
+        </audio>
+        <p>Ouça a música "♻️Recicla Comunidade" e se inspire a cuidar do nosso planeta!</p> <!--mensagem motivacional-->
+    </section>
+</div>
+</body>
+</html>
