@@ -1,0 +1,144 @@
+/*Trabalho de: Mikael Alano, Rayana e Gabriel*/
+body {
+    background-color: #fff3e0; /* corzinha de fundo clara, tipo um bege meio alaranjado */
+    font-family: Arial, sans-serif; /* fonte padrãozinha, bem legível */
+    margin: 0; /* tira as margens padrão do body */
+    color: #e65100; /* essa cor laranjona vai ser a cor padrão do texto */
+    line-height: 1.5; /* espaçamento entre as linhas pra ficar mais fácil de ler */
+}
+
+h1 {
+    font-size: 2.5rem; /* tamanho grandão pro título principal */
+    text-align: center; /* centraliza o h1 */
+    margin-top: 20px;
+    margin-bottom: 20px; /*margens em cima e embaixo pra dar um respiro visual*/
+}
+
+h2 {
+    font-size: 1.8px; /* subtítulo um pouco menor */
+    border-bottom: 3px solid #e65100; /* risquinho embaixo pra dar um destaque*/
+    padding-bottom: 0.3px; /*espaçozinho abaixo do texto antes da linha*/
+}
+
+.barra1 {
+    max-width: 750px; /* limite pra não ficar gigante em telas grandes */
+    margin: 1.5rem auto; /* centraliza com margenzinha em cima/baixo */
+    background-color: #fff; /* fundo branco pra destacar o conteúdo */
+    border: 3px solid #e65100; /* borda laranja bonitona */
+    border-radius: 10px; /* cantos arredondados pra ficar mais suave */
+    padding: 20px 30px; /* espaço interno nas laterais */
+    box-sizing: border-box; /* garante que o padding não estoure a largura */
+}
+
+.animacao {
+    transition: all 0.4s ease; /* transição suave pra quando passa o mouse */
+}
+
+.animacao:hover {
+    transform: scale(1.05); /* aumenta um pouco quando passa o mouse, tipo zoom */
+    box-shadow: 0 4px 16px rgba(0, 128, 0, 0.2); /* sombrazinha pra dar profundidade */
+}
+
+.animacao1 {
+    transition: all 0.4s ease; /* mesma coisa do de cima mas separado */
+}
+
+.animacao1:hover {
+    transform: scale(1.05); /* mesmo efeito de aumentar ao passar o mouse */
+}
+
+p {
+    font-weight: bold; /* deixa os paragrafos em negrito */
+    max-width: 700px; /* limita a largura pra não ficar espalhado demais */
+    margin-left: auto;
+    margin-right: auto; /* centraliza o texto */
+}
+
+ul {
+    list-style-type: none; /*tira as bolinhas padrão da lista*/
+    padding-left: 0;
+    max-width: 700px; /*adiciona um limite de 700 pixels*/
+    margin-left: auto;
+    margin-right: auto; /*centraliza*/
+    font-weight: bold; /*muda a fonte para bold*/
+}
+
+ul li {
+    margin: 10px 0; /* espaço entre os itens */
+    padding-left: 1.2em; /* espacinho pra caber o emoji */
+    position: relative; /* pra poder posicionar o emoji certin */
+}
+
+ul li::before { /*o befor serve para adicionar um emoji antes de cada item da lista*/
+    content: "🐾"; /*adiciona uma patinha antes de cada item*/
+    position: absolute; /*posiciona o emoji em relação ao li*/
+    left: 0; /*coloca a patinha na esquerda*/
+    color: #e65100; /*mesma cor do tema laranja*/
+}
+
+.video {
+    text-align: center; /*centraliza o video*/
+    margin-bottom: 30px; /*espaçozinho embaixo*/
+}
+
+iframe { /*o iframe serve para colocar o video dentro*/
+    width: 100%; /*ocupa toda a largura disponivel*/
+    max-width: 690px; /*coloca um limite de largura em 690pixels*/
+    height: 360px; /*adiciona um limite de 360 pixels de altura*/
+    border: none; /*tira qualquer borda*/
+    border-radius: 10px; /*cantos arredondados pra deixar bonito*/
+}
+
+hr {
+    border: 3px solid #e65100; /* linha grossa laranja */
+    width: 90%; /* quase toda a largura */
+    margin: 20px auto; /* centraliza com espacinho */
+}
+
+.barrinha {
+    border: 2px solid #e65100; /*linha um pouco mais fina e laranja*/
+    width: 40%; /*coloca o limite de largura pra 40%*/
+    margin: 10px auto; /*centraliza*/
+}
+#inicio {
+    margin-top: 20px; /*espaçamento em cima*/
+    cursor: pointer; /*muda o cursor pra mãozinha, parece um botão*/
+}
+
+#botao {
+    position: absolute; /*posiciona em relação ao body*/
+    left: 50%; /*vai atéo meio*/
+    transform: translateX(-50%); /*puxa metade pra esquerda pra centralizar*/
+    margin-top: 20px; /*espaço em cima do botão*/
+    background-color: #e65100; /*cor laranja pro botão*/
+    color: white; /*texto branco*/
+    border: none; /*tira borda padrão*/
+    border-radius: 5px; /*cantos arredondados*/
+    padding: 1px 10px; /*espaço interno do botão*/
+    font-weight: bold; /*etra em negrito */
+    cursor: pointer; /*vira a mãozinha quando passa o mouse*/
+}
+
+@media (max-width: 768px) {/*não consegui aprender a deixar o site responsivo sozinho*/
+    /*regras pra telas menores, tipo celular em pé*/
+    h1 {
+        font-size: 2rem; /*diminui o tamanho do título*/
+    }
+    .container {
+        padding: 15px 20px;
+        margin: 1rem auto;
+        width: 90%; /*usa mais a largura da tela*/
+    }
+    iframe {
+        height: 220px; /*diminui a altura do video pra caber melhor*/
+    }
+}
+
+@media (max-width: 480px) {
+    /*ainda menor, tipo celular beem pequeno*/
+    p, ul {
+        max-width: 100%; /*ocupa toda a largura disponível*/
+        margin-left: 0;
+        margin-right: 0; /*remove a centralização*/
+    }
+}
