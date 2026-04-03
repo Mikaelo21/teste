@@ -1,0 +1,139 @@
+/*Trabalho de: Mikael Alano, Rayana e Gabriel*/
+body {
+    background-color: #e1f5fe;/*fundinho azul claro, bem calminho tipo céu de manhã*/
+    font-family: Arial, sans-serif;/*fonte padrãozinha pra leitura suave*/
+    margin: 0;/*tira a margem padrão do navegador*/
+    color: #0288d1;/*cor azul que vai ser usada como base nos textos*/
+    line-height: 1.5;/*espaçamento entre linhas pra não ficar tudo grudado*/
+}
+
+h1 {
+    font-size: 2.5rem;/*título principal grandão*/
+    text-align: center;/*centraliza o h1 no meio da página*/
+    margin-top: 20px;
+    margin-bottom: 20px;/*espaço em cima e embaixo pra respirar o título*/
+}
+
+.animacao {
+    transition: all 0.4s ease;/*efeito suavizinho quando passa o mouse*/
+}
+
+.animacao:hover {
+    transform: scale(1.05);/*da uma aumentadinha no elemento no hover*/
+    box-shadow: 0 4px 16px rgba(0, 128, 0, 0.2);/*sombra leve pra dar profundidade*/
+}
+
+.animacao1 {
+    transition: all 0.4s ease;/*mesma ideia da outra animação*/
+}
+
+.animacao1:hover {
+    transform: scale(1.05);/*também aumenta um pouco quando passa o mouse*/
+}
+
+h2 {
+    font-size: 1.8rem;/*subtítulo menor que o h1*/
+    border-bottom: 3px solid #0288d1;/*linha azul pra destacar o subtitulo*/
+    padding-bottom: 0.3rem;/*espaçozinho abaixo do texto e da linha*/
+}
+
+.barra12 {
+    max-width: 750px;/*limita a largura da barra pra não ficar esticadona*/
+    margin: 1.5rem auto;/*centraliza com espaço em cima e embaixo*/
+    background-color: #fff;/*fundinho branco pra destacar a parte de dentro*/
+    border: 3px solid #0288d1;/*borda azul pra combinar com o tema*/
+    border-radius: 10px;/*cantos arredondados pra parecer mais leve*/
+    padding: 20px 30px;/*espaço interno pra não grudar o conteúdo na borda*/
+    box-sizing: border-box;/*padding conta dentro do tamanho total*/
+}
+
+p {
+    font-weight: bold;/*deixa os paragrafos em negrito*/
+    max-width: 700px;/*limita a largura pra não ficar muito esticado*/
+    margin-left: auto;
+    margin-right: auto;/*centraliza os parágrafos*/
+}
+
+ul {
+    list-style-type: none;/*remove as bolinhas padrões da lista*/
+    padding-left: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;/*centraliza a lista*/
+    font-weight: bold;/*deixa os itens em negrito também*/
+}
+
+ul li {
+    margin: 10px 0;/*espaçamento entre os itens*/
+    padding-left: 1.2em;/*deixa espaço pros ícones*/
+    position: relative;/*pra poder posicionar os ícones com before*/
+}
+
+ul li::before {
+    content: "💧";/*iconezinho de gota antes dos itens, bem água né*/
+    position: absolute;/*posiciona o emoji direitinho*/
+    left: 0;/*gruda na esquerda*/
+    color: #0288d1;/*mesma cor do tema azulzão*/
+}
+
+.video {
+    text-align: center;/*centraliza o vídeo na tela*/
+    margin-bottom: 30px;/*espaço depois do vídeo*/
+}
+
+iframe {
+    width: 100%;/*pega toda a largura disponivel da div pai*/
+    max-width: 690px;/*mas limita pra não passar de 690px*/
+    height: 360px;/*altura padrão de vídeo*/
+    border: none;/*remove qualquer borda do iframe*/
+    border-radius: 10px;/*arredonda os cantos do vídeo também*/
+}
+
+hr {
+    border: 3px solid #0288d1;/*linha grossinha e azul clara*/
+    width: 90%;/*quase toda a largura da tela*/
+    margin: 20px auto;/*centraliza e dá espaço em cima e embaixo*/
+}
+
+.barrinha {
+    border: 2px solid #0288d1;/*linha mais fininha azul clara*/
+    width: 40%;/*só uma barrinha central pequena*/
+    margin: 10px auto;/*centraliza bonitinho*/
+}
+
+#botao {
+    bottom: unset;/*remove valor padrão se tiver*/
+    position: absolute;/*posiciona em relação ao body*/
+    left: 50%;/*joga pro meio*/
+    transform: translateX(-50%);/*centraliza certinho*/
+    margin-top: 20px;/*espaço em cima do botão*/
+    background-color: #0288d1;/*cor do botão azulzão pra combinar com tudo*/
+    color: white;/*texto branco no botão pra destacar*/
+    border: none;/*sem borda padrão*/
+    border-radius: 5px;/*cantos arredondados do botão*/
+    padding: 1px 10px;/*espaçinho interno do botão*/
+    font-weight: bold;/*letra do botão em negrito*/
+    cursor: pointer;/*vira a mãozinha quando passa o mouse em cima*/
+}
+
+@media (max-width: 768px) {/*não consegui aprender a deixar o site responsivo sozinho*/
+    h1 {
+        font-size: 2rem;/*reduz o tamanho do título em telas menores*/
+    }
+    .container {
+        padding: 15px 20px;
+        margin: 1rem auto;
+        width: 90%;/*usa mais espaço da tela quando for pequena*/
+    }
+    iframe {
+        height: 220px;/*diminui o vídeo pra caber direitinho*/
+    }
+}
+
+@media (max-width: 480px) {
+    p, ul {
+        max-width: 100%;/*usa toda a largura disponível*/
+        margin-left: 0;
+        margin-right: 0;/*tira as margens laterais pra caber bem no celular*/
+    }
+}
